@@ -21,7 +21,7 @@ func (this *addRepChan) Execute() {
 
 func main() {
 	var routines int = 10
-	var items int = 100000
+	var items int = 1000
 	fmt.Println("1 time=", time.Now().Format("2006-01-02 15:04:05.000"))
 	workPools := gopool.NewPoolMultiParam(routines, items)
 	for count := 0; count < 1000000; count++ {
